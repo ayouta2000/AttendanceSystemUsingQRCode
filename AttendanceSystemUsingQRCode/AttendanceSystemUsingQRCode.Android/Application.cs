@@ -45,6 +45,7 @@ namespace AttendanceSystemeUsingQRCode.Droid
                 CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
                 {
                 };
+               
             }
         }
     }
