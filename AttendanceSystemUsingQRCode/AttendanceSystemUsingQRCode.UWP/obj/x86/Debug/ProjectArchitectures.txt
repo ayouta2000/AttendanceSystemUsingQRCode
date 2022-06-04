@@ -1,0 +1,1 @@
+C:\AttendanceSystemUsingQRCode\AttendanceSystemUsingQRCode\AttendanceSystemUsingQRCode.UWP\AttendanceSystemUsingQRCode.UWP.csproj;x86

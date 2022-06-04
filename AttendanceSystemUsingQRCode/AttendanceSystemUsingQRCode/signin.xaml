@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AttendanceSystemeUsingQRCode.signin"
+             BackgroundColor="White"
+               ControlTemplate="{StaticResource MasterPage }">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="20" >
+                <Label Grid.Row="1"  Text="Welcome back !"  FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+
+                <Label TextColor="LightSeaGreen" FontAttributes="Bold" FontSize="Medium " Text="Email"></Label>
+              <Entry Keyboard="Email" ClearButtonVisibility="WhileEditing" Placeholder="set your email"></Entry>
+
+              <Label TextColor="LightSeaGreen"  FontSize="Medium " FontAttributes="Bold">Password</Label>
+              <Entry IsPassword="True" ClearButtonVisibility="WhileEditing" Placeholder="set your password"></Entry>
+
+            </StackLayout>
+            <StackLayout Padding="20" Spacing="100">
+              <Button Text="sign in" BackgroundColor="LightSeaGreen" Clicked="Button_Clicked" CornerRadius="20" ></Button>
+              <Button  Margin="0,-10,0,0" Text="Don't have an account? Sign up here" HorizontalOptions="CenterAndExpand" BackgroundColor="#ffffffff"  TextColor="LightSeaGreen" FontAttributes="Bold" Clicked="go_to_signup_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

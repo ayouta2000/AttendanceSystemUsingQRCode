@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AttendanceSystemeUsingQRCode.TeacherSpace"
+             BackgroundColor="White"
+             ControlTemplate="{StaticResource MasterPage }">
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+            <Button Margin="40" Text="+ Add a class" 
+                    BackgroundColor="LightSeaGreen"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    Clicked="AddClass_Clicked"
+                    />
+            <Button Margin="40" Text="Attendance list " 
+                    BackgroundColor="LightSeaGreen"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    Clicked="AttendanceList"/>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

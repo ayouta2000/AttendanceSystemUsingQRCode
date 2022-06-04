@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AttendanceSystemeUsingQRCode.TimeSchedule"
+              ControlTemplate="{StaticResource MasterPage }" 
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Margin="10" HorizontalOptions="CenterAndExpand" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Time schedule for L3 and M1" FontAttributes="Bold" FontSize="Header" TextColor="LightSeaGreen" TextDecorations="Underline" >
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}" 
+                                                          CommandParameter="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:4866e26d-1eb7-3242-97f1-3561b4442d07"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="10" HorizontalOptions="CenterAndExpand" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Time schedule for L1 and L2" FontAttributes="Bold" FontSize="Header" TextColor="LightSeaGreen" TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding clickCommand}" 
+                                                          CommandParameter="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:67a7470e-0485-3f8a-9efc-dc6564b507bd"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AttendanceSystemeUsingQRCode.SingUp"
+             BackgroundColor="White"
+               ControlTemplate="{StaticResource MasterPage }">
+    <ContentPage.Content>
+        <ScrollView>
+                    <StackLayout>
+                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="20" Padding="20,0,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+
+
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Row="1"  Text="Welcome !"  FontSize="24" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+                            <Entry Grid.Row="2" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Name" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="4" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Registration_number" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="5" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Date of birth"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="6" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Phone number" MaxLength="10" Keyboard="Telephone" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="7" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Departement" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="8" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Specialty" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="9" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Role :student or teacher" MaxLength="7"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="10" ClearButtonVisibility="WhileEditing"   PlaceholderColor="LightSeaGreen" Placeholder="Education_level" MaxLength="1" Keyboard="Numeric" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="11" ClearButtonVisibility="WhileEditing"  PlaceholderColor="LightSeaGreen" Placeholder="Email" Keyboard="Email" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+                            <Entry Grid.Row="12" ClearButtonVisibility="WhileEditing"  PlaceholderColor="LightSeaGreen" Placeholder="Password" IsPassword="True"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Entry>
+
+                            <Button Grid.Row="13" Text="signup" BackgroundColor="LightSeaGreen" Clicked="sign_up_Clicked" CornerRadius="20"></Button>
+                            <Label Grid.Row="14"  Text="or signin with" HorizontalOptions="CenterAndExpand" TextColor="LightSeaGreen"></Label>
+                            <StackLayout Grid.Row="15" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="40">
+                                <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo626DNKJxdHM-VNRD0m7x_8Jim-r9kRalJQ" WidthRequest="30"
+                               HeightRequest="30" Aspect="AspectFit"></Image>
+                                <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnLfAn36-LTYNHjioWgvu-0KUTIDDrW5lX_g" WidthRequest="30"
+                               HeightRequest="30" Aspect="AspectFit"></Image>
+                                <Image Source="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png" WidthRequest="30"
+                               HeightRequest="30" Aspect="AspectFit"></Image>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/174/174857.png" WidthRequest="30"
+                               HeightRequest="30" Aspect="AspectFit"></Image>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+          
+
+    </ContentPage.Content>
+</ContentPage>

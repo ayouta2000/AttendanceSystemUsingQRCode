@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AttendanceSystemeUsingQRCode.App">
+    <Application.Resources>
+        <ResourceDictionary>
+                    <ControlTemplate  x:Key="MasterPage">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="150" />
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="55"/>
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="0" Aspect="AspectFill" Source="OIP.jpg " />
+
+                            <ContentPresenter Grid.Row="1"/>
+
+                            <Grid Grid.Row="2" BackgroundColor="#00ffffff">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Button  ImageSource="Home.png"   Grid.Column="0"  Clicked="Home_Clicked" BackgroundColor=" #00ffffff" />
+                                <Button  ImageSource="Notification.png" Grid.Column="1" FontSize="Micro"  Clicked="notification_Clicked" BackgroundColor=" #00ffffff"/>
+                                <Button  ImageSource="user.png"  Grid.Column="2" Clicked="profile_Clicked"  BackgroundColor=" #00ffffff" />
+
+
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </ResourceDictionary>
+           
+    </Application.Resources>
+</Application>

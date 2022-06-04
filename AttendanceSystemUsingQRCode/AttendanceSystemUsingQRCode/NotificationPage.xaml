@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AttendanceSystemeUsingQRCode.NoticationPage"
+             ControlTemplate="{StaticResource MasterPage }"
+             Title="Local Notification">
+
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand" Padding="25,40,25,30" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="Notifications ON/OFF" TextColor="White" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    <Switch IsToggled=" {Binding NotificationONOFF}" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="SET TIME" HorizontalOptions="StartAndExpand" FontSize="15" TextColor="White" VerticalOptions="Center"/>
+                    <TimePicker HorizontalOptions="EndAndExpand" Time=" {Binding SelectedTime}" TextColor="White" BackgroundColor="Transparent" Format="t"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label Text="SET DATE" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                    <DatePicker HorizontalOptions="EndAndExpand" Date=" {Binding SelectedDate}" TextColor="White"  BackgroundColor="Transparent" Format="MM-dd-yyyy"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="3">
+                <StackLayout HorizontalOptions="FillAndExpand" Spacing="10">
+                    <Label Text="Enter Message" FontSize="15" HorizontalOptions="StartAndExpand" TextColor="White" VerticalOptions="Center"/>
+                    <Editor HeightRequest="120" Text=" {Binding MessageText}" TextColor="Purple" BackgroundColor="White" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Button Text="Save" Command="{Binding SaveCommand}" FontSize="15" TextColor="White" BackgroundColor="Purple"  HorizontalOptions="FillAndExpand" BorderRadius="15"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
